@@ -16,18 +16,6 @@ npm install vuejs-overlay --save
 
 # Usage
 
-```js
-// ES6
-import vTitle from 'vuejs-overlay'
-Vue.use(vTitle)
-
-// ES5
-var vTitle = require('vuejs-overlay')
-Vue.use(vTitle)
-```
-
-### Example
-
 ```html
 <div id="app">
     <overlay :opened="opened" :visible="visible" @closed="opened = visible = false">
@@ -39,6 +27,9 @@ Vue.use(vTitle)
 ```
 
 ```js
+// ES6
+import {Overlay} from 'vuejs-overlay.js';
+
 new Vue({
     el: '#app',
     data() {
@@ -46,6 +37,9 @@ new Vue({
             opened: false,
             visible: false
         }
+    },
+    components: {
+        Overlay
     }
 });
 ```
@@ -88,6 +82,7 @@ Let's take an example of content data with ajax. In this example we used [`vuejs
 
 ```js
 import ajax from "vuejs-ajax";
+import {Overlay} from 'vuejs-overlay.js';
 Vue.use(ajax);
 
 new Vue({
@@ -112,6 +107,9 @@ new Vue({
             this.opened = false;
             this.visible = false;
         }
+    },
+    components: {
+        Overlay
     }
 });
 ```
