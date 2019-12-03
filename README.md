@@ -1,5 +1,9 @@
 # vuejs-overlay
 
+[![Travis Build](https://img.shields.io/travis/fattihkoca/vuejs-overlay.svg)](https://travis-ci.org/fattihkoca/vuejs-overlay)
+[![Version](https://img.shields.io/npm/v/vuejs-overlay.svg)](https://www.npmjs.com/package/vuejs-overlay)
+[![Downloads](https://img.shields.io/npm/dm/vuejs-overlay.svg)](https://www.npmjs.com/package/vuejs-overlay)
+
 ![Vue.js Overlay](https://user-images.githubusercontent.com/1655312/70054926-8d469d80-15e9-11ea-9fdc-c8f65bf9bc85.png)
 
 `Vue.js Overlay` is a practical, modern and convenient `overlay` (`popup`) `Vue.js` component.
