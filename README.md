@@ -23,7 +23,7 @@ npm install vuejs-overlay --save
 ```html
 <div id="app">
     <overlay :opened="opened" :visible="visible" @closed="opened = visible = false">
-        My popup
+        <span>My popup</span>
     </overlay>
     
     <button @click="opened = visible = true">Open Popup</button>
@@ -47,6 +47,8 @@ new Vue({
     }
 });
 ```
+
+---
 
 # Configurations
 You can make the configurations with `props`.
@@ -120,6 +122,8 @@ new Vue({
 });
 ```
 
+---
+
 # Events
 | Configuration                     | Type             | Description                                                   |
 | ----------------------------------| ---------------- | ------------------------------------------------------------- |
@@ -128,9 +132,11 @@ new Vue({
 
 ```html
 <overlay :opened="opened" :visible="visible" @closed="opened = visible = false" @opened="someCallback">
-    My popup
+    <span>My popup</span>
 </overlay>
 ```
+
+---
 
 # License
 [MIT](LICENSE)
