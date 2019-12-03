@@ -71,6 +71,8 @@ You can make the configurations with `props`.
 </overlay>
 ```
 
+![animate: zoom-in](https://user-images.githubusercontent.com/1655312/70065736-a147ca80-15fc-11ea-967d-3daed7501065.gif)
+
 #### Usage asynchronously:
 Let's take an example of content data with ajax. In this example we used [`vuejs-ajax`](https://github.com/fattihkoca/vuejs-ajax) library. 
 
