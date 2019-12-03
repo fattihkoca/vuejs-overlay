@@ -67,7 +67,7 @@ You can make the configurations with `props`.
 
 ```html
 <overlay animate="zoom-in" :opened="opened" :visible="visible" @closed="opened = visible = false">
-    👍
+    <div>👍</div>
 </overlay>
 ```
 
