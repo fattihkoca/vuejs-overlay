@@ -32,7 +32,7 @@ npm install vuejs-overlay --save
 
 ```js
 // ES6
-import {Overlay} from 'vuejs-overlay.js';
+import Overlay from 'vuejs-overlay';
 
 new Vue({
     el: '#app',

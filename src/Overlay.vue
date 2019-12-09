@@ -258,7 +258,7 @@
     %edge {
         top: 0;
         right: 0;
-        background: 0;
+        bottom: 0;
         left: 0;
     }
 
@@ -267,7 +267,7 @@
     }
 
     %overflow-auto {
-        overflow: hidden;
+        overflow: auto;
     }
 
     @keyframes v-overlay-bounce-in {
