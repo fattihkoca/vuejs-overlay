@@ -368,6 +368,11 @@
         }
     }
 
+    body {
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+
     .parent-doc-fixed {
         position: fixed;
     }
@@ -419,6 +424,9 @@
             right: 10px;
             width: 32px;
             height: 32px;
+            background: transparent;
+            border: none;
+            outline: none;
             cursor: pointer;
 
             &, &:before, &:after {
