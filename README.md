@@ -58,6 +58,7 @@ You can make the configurations with `props`.
 | animate                           | String, Boolean  | false                    | You can choose which animation the popup will open and close. |
 | backdrop                          | Boolean          | true                     | Specifies whether the popup has a backdrop.                   |
 | close-on-escape                   | Boolean          | true                     | This is to close the popup with the `escape key`.             |
+| close-on-cancel                   | Boolean          | true                     | This is to close the popup with the `cancel button`.          |
 | close-by-backdrop-click           | Boolean          | true                     | This is to close the popup when the backdrop is clicked.      |
 | closeable                         | Boolean          | true                     | Closing feature of the popup. You can use it in critical form operations. |
 | opened                            | Boolean          | false                    | Specifies the popup is opened.                                |

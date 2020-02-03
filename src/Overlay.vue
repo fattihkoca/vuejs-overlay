@@ -15,7 +15,7 @@
                 </div>
             </div>
 
-            <button v-if="closeable" class="v-overlay-close-handle"
+            <button v-if="closeable && closeOnCancel" class="v-overlay-close-handle"
                     @click.prevent.stop="close" :title="closeTitle"></button>
 
             <div v-if="!contentVisible && loadingVisible" class="v-overlay-loading">
@@ -51,15 +51,19 @@
                 type: Boolean,
                 default: true
             },
+            closeOnEscape: {
+                type: Boolean,
+                default: true
+            },
+            closeOnCancel: {
+                type: Boolean,
+                default: true
+            },
             closeTitle: {
                 type: String,
                 default: 'Close'
             },
             backdrop: {
-                type: Boolean,
-                default: true
-            },
-            closeOnEscape: {
                 type: Boolean,
                 default: true
             },
