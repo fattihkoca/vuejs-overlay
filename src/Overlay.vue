@@ -35,7 +35,7 @@
 
 <script>
     export default {
-        name: "overlayF",
+        name: "overlay",
         props: {
             opened: Boolean,
             visible: Boolean,
