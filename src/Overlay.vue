@@ -35,7 +35,7 @@
 
 <script>
     export default {
-        name: "overlay",
+        name: "overlayF",
         props: {
             opened: Boolean,
             visible: Boolean,
@@ -122,6 +122,8 @@
                     setTimeout(() => {
                         this.contentVisible = true;
                         setTimeout(this.alignCenter, 0);
+
+                        this.resizeObserver();
                     }, this.visibleDelay);
 
                     return;
@@ -226,6 +228,17 @@
                     removeClass(body, 'default-scroll-behavior');
                     removeClass(html, 'default-scroll-behavior');
                 }, 0);
+            },
+            resizeObserver() {
+                if((typeof ResizeObserver !== 'function')) {
+                    return;
+                }
+
+                let ro = new ResizeObserver(entries => {
+                    this.alignCenter();
+                });
+
+                ro.observe(this.$refs.overlay);
             },
         },
         mounted() {
