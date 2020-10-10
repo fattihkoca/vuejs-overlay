@@ -1,6 +1,6 @@
 {
   "name": "vuejs-overlay",
-  "version": "0.0.26",
+  "version": "0.0.27",
   "description": "Overlay (popup) component for Vue.js",
   "keywords": [
     "vue overlay component",
