@@ -162,7 +162,7 @@ export default {
     closeByBackdrop(e) {
       if (this.$refs.overlay instanceof Element
           && this.closeByBackdropClick
-          && !this.isOutsideTarget(e)
+          && this.isOutsideTarget(e)
           && !this.isDragException(e)) {
         this.close();
       }
